@@ -1,0 +1,11 @@
+<config>
+    <modules>
+        <PagCoin_BTCPayment>
+            <active>true</active>
+            <codePool>community</codePool>
+            <depends>
+                <Mage_Payment />
+            </depends>
+        </PagCoin_BTCPayment>
+    </modules>
+</config>

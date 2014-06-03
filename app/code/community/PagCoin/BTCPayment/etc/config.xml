@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <PagCoin_BTCPayment>
+            <version>0.1.0</version>
+        </PagCoin_BTCPayment>
+    </modules>
+    
+    <global>
+        
+        <models>
+            <BTCPayment>
+                <class>PagCoin_BTCPayment_Model</class>
+            </BTCPayment>
+        </models>
+        
+        <helpers>
+            <BTCPayment>
+                <class>PagCoin_BTCPayment_Helper</class>
+            </BTCPayment>
+        </helpers>
+        
+        <payment>
+            <groups>
+                <BTCPayment>PagCoin - Pague com bitcoins</BTCPayment>
+            </groups>
+        </payment>
+        
+        <!--events>
+            <checkout_type_onepage_save_order_after>
+                <observers>
+                    <PagCoin_BTCPayment_observer>
+                        <class>PagCoin_BTCPayment_Model_Observer</class>
+                        <method>saveOrderQuoteToSession</method>
+                    </PagCoin_BTCPayment_observer>
+                </observers>
+            </checkout_type_onepage_save_order_after>
+        </events-->
+        
+    </global>
+    
+    <default>
+        <payment>
+            <BTCPayment>
+                <model>BTCPayment/standard</model>
+                <group>BTCPayment</group>
+                <active>1</active>
+                <title>Pague com Bitcoins - PagCoin</title>
+                <payment_action>sale</payment_action>
+                <allowspecific>0</allowspecific>
+            </BTCPayment>
+        </payment>
+        <BTCPayment>
+            <settings>
+                <activationstatus>0</activationstatus>
+            </settings>
+        </BTCPayment>
+    </default>
+    
+    <frontend>
+        <secure_url>
+            <BTCPayment_processing>/BTCPayment/PagCoin</BTCPayment_processing>
+        </secure_url>
+        <routers>
+            <BTCPayment>
+                <use>standard</use>
+                <args>
+                    <module>PagCoin_BTCPayment</module>
+                    <frontName>BTCPayment</frontName>
+                </args>
+            </BTCPayment>
+        </routers>
+    </frontend>
+
+</config>
