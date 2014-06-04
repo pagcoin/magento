@@ -86,7 +86,7 @@ class PagCoin_BTCPayment_Model_Standard extends Mage_Payment_Model_Method_Abstra
 		curl_setopt( $ch, CURLOPT_CAINFO, $cabundle);
 		
 		$redirectUrl = curl_exec($ch);
-		$http_status = curl_getinfo($ch);
+		$http_status = curl_getinfo($ch, CURLINFO_HTTP_CODE);
 
 
 		curl_close($curl);
