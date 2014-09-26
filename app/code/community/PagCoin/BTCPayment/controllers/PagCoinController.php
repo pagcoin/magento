@@ -54,4 +54,3 @@ class PagCoin_BTCPayment_PagCoinController extends Mage_Core_Controller_Front_Ac
 
 }
 
-?>
