@@ -21,7 +21,7 @@ class PagCoin_BTCPayment_PagCoinController extends Mage_Core_Controller_Front_Ac
             die("Assinatura não confere.");
         }
 
-        $fields = json_decode($postdata);
+        $fields = json_decode($postdata,true);
 
         if ($fields["statusPagamento"] == 'confirmado') {
             $quote = Mage::getModel('sales/quote')->load($fields["idInterna"]);
