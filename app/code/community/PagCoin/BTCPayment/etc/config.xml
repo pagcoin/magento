@@ -2,7 +2,7 @@
 <config>
     <modules>
         <PagCoin_BTCPayment>
-            <version>0.1.1</version>
+            <version>0.1.0</version>
         </PagCoin_BTCPayment>
     </modules>
     
@@ -59,6 +59,11 @@
         <BTCPayment>
             <settings>
                 <activationstatus>0</activationstatus>
+            </settings>
+        </BTCPayment>
+        <BTCPayment>
+            <settings>
+                <msg_add>Escreva aqui o texto para ser exibido no checkout. HTML permitido.</msg_add>
             </settings>
         </BTCPayment>
     </default>
