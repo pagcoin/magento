@@ -67,7 +67,7 @@ class PagCoin_BTCPayment_Model_Standard extends Mage_Payment_Model_Method_Abstra
 		$request = array(
 			"apiKey" => $apikey, 
 			"valorEmMoedaOriginal" => (float)$grandTotal, 
-			"nomeProduto" => 'Carrinho de compras - ' . $storeName, 
+			"nomeProduto" => $storeName . ' - Pedido ' . Mage::getSingleton('checkout/session')->getLastRealOrderId(), 
 			"idInterna" => $apiOrderId, 
 			"email" => $apiEmail, 
 			"redirectURL" => $apiRedirect
