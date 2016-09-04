@@ -3,6 +3,8 @@ class PagCoin_BTCPayment_Model_Standard extends Mage_Payment_Model_Method_Abstra
 { 
     
     protected $_code = 'BTCPayment';
+	protected $_formBlockType = 'BTCPayment/form';
+//	protected $_infoBlockType = 'btcpayment/info';
     protected $_isInitializeNeeded      = true;
     protected $_canUseInternal          = false;
     protected $_canUseForMultishipping  = false;

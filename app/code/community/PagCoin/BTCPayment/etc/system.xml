@@ -63,6 +63,16 @@
                             <show_in_website>1</show_in_website>
                             <show_in_store>0</show_in_store>
                         </merchantkey>
+						
+                        <msg_add translate="label">
+                            <label>Mensagem adicional</label>
+                            <comment><![CDATA[O conteúdo deste campo é exibido na escolha da forma de pagamento, no fechamento dos pedidos.]]></comment>
+                            <frontend_type>textarea</frontend_type>
+                            <sort_order>61</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </msg_add>
                         
                     </fields>
                 </BTCPayment>
