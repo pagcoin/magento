@@ -66,7 +66,7 @@
 						
                         <msg_add translate="label">
                             <label>Mensagem adicional</label>
-                            <comment><![CDATA[O conteúdo deste campo é exibido na escolha da forma de pagamento, no fechamento dos pedidos.]]></comment>
+                            <comment><![CDATA[O conteúdo deste campo é exibido na escolha da forma de pagamento, no fechamento dos pedidos. HTML permitido.]]></comment>
                             <frontend_type>textarea</frontend_type>
                             <sort_order>61</sort_order>
                             <show_in_default>1</show_in_default>
