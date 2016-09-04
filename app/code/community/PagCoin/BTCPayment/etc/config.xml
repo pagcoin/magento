@@ -14,6 +14,12 @@
             </BTCPayment>
         </models>
         
+        <blocks>
+            <BTCPayment>
+                <class>PagCoin_BTCPayment_Block</class>
+            </BTCPayment>
+        </blocks>
+		
         <helpers>
             <BTCPayment>
                 <class>PagCoin_BTCPayment_Helper</class>
@@ -53,6 +59,11 @@
         <BTCPayment>
             <settings>
                 <activationstatus>0</activationstatus>
+            </settings>
+        </BTCPayment>
+        <BTCPayment>
+            <settings>
+                <msg_add>Escreva aqui o texto para ser exibido no checkout. HTML permitido.</msg_add>
             </settings>
         </BTCPayment>
     </default>
